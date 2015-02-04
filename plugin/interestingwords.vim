@@ -200,7 +200,7 @@ function! s:buildColors()
   " highlight group indexed from 1
   let currentIndex = 1
   for wordColor in wordColors
-    execute 'hi! def InterestingWord' . currentIndex . ' ' . ui . 'bg=' . wordColor . ' ' . ui . 'fg=Black'
+    execute 'hi! def InterestingWord' . currentIndex . ' ' . ui . 'bg=' . wordColor . ' ' . ui . 'fg=White gui=Bold'
     call add(s:interestingWords, 0)
     call add(s:interestingModes, 'n')
     call add(s:recentlyUsed, currentIndex-1)
